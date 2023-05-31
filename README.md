@@ -40,5 +40,5 @@ Local test with a mount with approximately 80K files and few subdirs is approx
 
 This project is licensed under
 
-* MIT license ([LICENSE-MIT](LICENSE-MIT) or
+* MIT license ([LICENSE](LICENSE) or
   [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
