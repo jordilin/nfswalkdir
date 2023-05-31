@@ -40,7 +40,7 @@ fn main() {
             nfsrx.set_uid(cli_opts.userid).unwrap();
             nfsrx.set_gid(cli_opts.groupid).unwrap();
             nfsrx.set_debug(0).unwrap();
-            nfsrx.mount(&cli_opts.ip, &cli_opts.dir).unwrap();
+            nfsrx.mount(&cli_opts.ip, &cli_opts.share).unwrap();
 
             for path in rx {
                 // Parent thread constantly monitors if there are any
