@@ -36,7 +36,7 @@
           doCheck = false;
         });
 
-        nfswalk = craneLib.buildPackage (commonArgs // {
+        nfswalkdir = craneLib.buildPackage (commonArgs // {
           inherit cargoArtifacts;
         });
 
