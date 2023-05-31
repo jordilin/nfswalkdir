@@ -63,8 +63,7 @@ fn main() {
                 for entry in dir {
                     let entry = entry.unwrap();
                     if let EntryType::Directory = entry.d_type {
-                        let path = Path::new(&cli_opts.dir).join(entry.path);
-                        tx.send(path).unwrap();
+                        tx.send(entry.path).unwrap();
                         // increment pending dirs
                         let mut dirs_pending_processing = dirs_pending_processing.write().unwrap();
                         *dirs_pending_processing += 1;
