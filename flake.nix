@@ -1,5 +1,5 @@
 {
-  description = "A devShell example";
+  description = "nfswalkdir dev shell and nix derivation";
 
   inputs = {
     nixpkgs.url      = "github:nixos/nixpkgs/nixos-unstable";
